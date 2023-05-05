@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+      integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-state">
+        <div class="state circle">
+          <div class="svg-circle">
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div><p>0 win</p></div>
+        </div>
+        <div class="state cross">
+          <div class="svg-cross">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div><p>0 win</p></div>
+        </div>
+        <div class="state draws">
+          <div class="svg-draws">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <div><p>0 draw</p></div>
+        </div>
+      </div>
+      <div class="tic-tac-toe">
+        <div class="row01 row">
+          <div class="box01 box"></div>
+          <div class="box02 box"></div>
+          <div class="box03 box"></div>
+        </div>
+        <div class="row02 row">
+          <div class="box04 box"></div>
+          <div class="box05 box"></div>
+          <div class="box06 box"></div>
+        </div>
+        <div class="row03 row">
+          <div class="box07 box"></div>
+          <div class="box08 box"></div>
+          <div class="box09 box"></div>
+        </div>
+      </div>
+      <div class="turn-indicator">
+        <div>
+          <span class="active-circle"
+            ><i class="fa-regular fa-circle circle"></i
+          ></span>
+          <span class=""><i class="fa-solid fa-xmark cross"></i></span>
+        </div>
+      </div>
+      <div class="menu">
+        <button class="arrows-rotate menu-item">
+          <i class="fa-solid fa-arrows-rotate"></i>
+        </button>
+        <button class="setting menu-item">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </div>
+      <div class="setting-items">
+        <div class="new-game">New Game</div>
+      </div>
+    </div>
+
+    <script src="script/app.js"></script>
+  </body>
+</html>
